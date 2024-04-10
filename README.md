@@ -12,8 +12,6 @@ Clima is a weather app that displays current weather information for the user's 
 
 ## Screenshots
 
-# Clima
-
 ![App UI](https://github.com/RGisanEclipse/Clima/raw/main/Clima/AppUI.jpg)
 
 
