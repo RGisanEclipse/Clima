@@ -10,6 +10,13 @@ Clima is a weather app that displays current weather information for the user's 
 - **Detailed Weather Forecast**: Provide a detailed weather forecast for the next few days.
 - **User-Friendly Interface**: Intuitive and easy-to-use interface for seamless navigation.
 
+## Screenshots
+
+# Clima
+
+![App UI](https://github.com/RGisanEclipse/Clima/raw/main/Clima/AppUI.jpg)
+
+
 ## Technologies Used
 
 - **Swift**: Clima is developed using the Swift programming language.
