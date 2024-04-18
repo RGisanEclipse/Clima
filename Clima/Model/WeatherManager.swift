@@ -12,7 +12,7 @@ protocol WeatherManagerDelegate{
 }
 struct WeatherManager{
     var delegate: WeatherViewController?
-    var weatherurl = "YOUR-API-TOKEN"
+    var weatherurl = "YOUR-API_TOKEN"
     var temprature: Double?
     func fetchWeather(_ cityName: String){
         let urlString = "\(weatherurl)&q=\(cityName)"
