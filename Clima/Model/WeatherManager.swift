@@ -4,12 +4,21 @@
 //
 //  Created by Eclipse on 15/02/24.
 //
-
+import Foundation
 import CoreLocation
+
 protocol WeatherManagerDelegate{
     func didUpdateWeather(_ weatherManager:WeatherManager, _ weather:WeatherModel)
     func didFailWithError(error:Error)
 }
+
+extension String {
+    func capitalizingFirstLetterOfEachWord() -> String {
+        return self.lowercased().split(separator: " ").map { $0.capitalized }.joined(separator: " ")
+    }
+}
+
+
 struct WeatherManager{
     var delegate: WeatherViewController?
     var weatherurl = "YOUR-API-KEY"
@@ -46,7 +55,8 @@ struct WeatherManager{
             let id = decodedData.weather[0].id
             let name = decodedData.name
             let temprature = decodedData.main.temp
-            let weather = WeatherModel(cityName: name, temprature: temprature, id: id)
+            let description = decodedData.weather[0].description.capitalizingFirstLetterOfEachWord()
+            let weather = WeatherModel(cityName: name, temprature: temprature, id: id, description: description)
             return weather
         } catch{
             delegate?.didFailWithError(error:error)
