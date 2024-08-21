@@ -21,7 +21,7 @@ extension String {
 
 struct WeatherManager{
     var delegate: WeatherViewController?
-    var weatherurl = "YOUR-API-KEY"
+    var weatherurl = "https://api.openweathermap.org/data/2.5/weather?appid=c57b987d6c866702cc2f19f0c32751d1&units=metric"
     var temprature: Double?
     func fetchWeather(_ cityName: String){
         let urlString = "\(weatherurl)&q=\(cityName)"
