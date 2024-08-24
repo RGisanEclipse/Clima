@@ -1,6 +1,6 @@
 # Clima
 
-Clima is a weather app that displays current weather information for the user's location or any other location they search for. The app provides real-time weather data.
+Clima is a weather application that shows up-to-date weather details for the user's current location or any other place they search for. It delivers real-time information such as temperature, weather conditions, and more.
 
 ## Features
 
